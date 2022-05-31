@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EntController">
+   <children>
+      <Pane layoutX="-4.0" layoutY="6.0" prefHeight="627.0" prefWidth="730.0">
+         <children>
+            <Pane layoutX="38.0" layoutY="24.0" prefHeight="226.0" prefWidth="492.0" style="-fx-background-color: black;">
+               <children>
+                  <Label layoutX="43.0" layoutY="23.0" text="ID" textFill="#f8f6f6">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Entrenom" layoutX="182.0" layoutY="81.0" prefHeight="25.0" prefWidth="197.0" />
+                  <Button fx:id="AddBtn" layoutX="29.0" layoutY="140.0" mnemonicParsing="false" onAction="#AddEn" prefHeight="39.0" prefWidth="68.0" style="-fx-background-color: green;" text="Ajouter" textFill="#f5eeee" />
+                  <Button fx:id="UpdBtn" layoutX="116.0" layoutY="139.0" mnemonicParsing="false" onAction="#Update" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: blue;" text="Update" textFill="#f5f2f2" />
+                  <Button fx:id="PreBtn" layoutX="214.0" layoutY="139.0" mnemonicParsing="false" onAction="#prepare" prefHeight="39.0" prefWidth="74.0" text="Prepare" textFill="#250101" />
+                  <Label layoutX="43.0" layoutY="74.0" text="NomEn" textFill="#f8f6f6">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idEntreprice" layoutX="182.0" layoutY="30.0" prefHeight="25.0" prefWidth="197.0" />
+               </children>
+            </Pane>
+            <TableView fx:id="table" layoutX="38.0" layoutY="266.0" prefHeight="200.0" prefWidth="257.0">
+              <columns>
+                <TableColumn fx:id="idE" prefWidth="75.0" text="IdEntreprice" />
+                <TableColumn fx:id="NomE" prefWidth="75.0" text="NomEntreprice" />
+              </columns>
+            </TableView>
+            <Button fx:id="deleBtn" layoutX="319.0" layoutY="301.0" mnemonicParsing="false" onAction="#Delete" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: red;" text="Delete" textFill="#f8f5f5" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

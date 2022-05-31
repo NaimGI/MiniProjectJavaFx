@@ -1,0 +1,1 @@
+[Salarie [Matricule=5, Nom=Laziiz, Email=Laziiz@gmail.com, Cat=Vendeur, AnneRecruit=1920.0, Salaire=400.0]]
